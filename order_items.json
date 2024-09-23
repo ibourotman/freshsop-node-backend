@@ -1,7 +1,5 @@
-{
-    "_id": "60f9f9b3b5a3314a0cbb2ff8",
-    "order": "60f9f9b3b5a3314a0cbb2ff7",
-    "product": "60f9f8aeb5a3314a0cbb2ff6",
-    "quantity": 3
-  }
-  
+[
+  {"_id": 1, "order": 1, "product": 1, "quantity": 3},
+  {"_id": 2, "order": 1, "product": 3, "quantity": 1},
+  {"_id": 3, "order": 2, "product": 5, "quantity": 2}
+]

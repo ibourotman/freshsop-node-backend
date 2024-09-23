@@ -1,2 +1,5 @@
-[{"id":1,"username":"otman","email":"otman.ibbour@usmba.ac.ma"},
-{"id":2,"username":"malak","email":"oibour558@gmail.com"}]
+[
+    {"_id": 1, "username": "otman", "email": "otman.ibbour@usmba.ac.ma"},
+    {"_id": 2, "username": "malak", "email": "oibour558@gmail.com"}
+  ]
+  

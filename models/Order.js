@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const orderSchema = new Schema({
-    user: { type: Schema.Types.ObjectId, ref: 'User', required: true },  // Reference to User
-    items: [{ type: Schema.Types.ObjectId, ref: 'OrderItem' }],  // List of OrderItems
-    createdAt: { type: Date, default: Date.now }  // Automatically store creation date
+const OrderSchema = new Schema({
+    _id: { type: Number, required: true },  // Utilisation d'un entier pour _id
+    user: { type: Number, ref: 'User', required: true },  // Référence à l'utilisateur
+    items: [{ type: Number, ref: 'OrderItem' }],  // Liste des références d'articles de commande
+    createdAt: { type: Date, default: Date.now }  // Date de création de la commande
 });
 
-module.exports = mongoose.model('Order', orderSchema);
+const Order = mongoose.model('Order', OrderSchema);
+module.exports = Order;

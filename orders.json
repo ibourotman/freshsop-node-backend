@@ -1,10 +1,14 @@
-{
-    "_id": "60f9f9b3b5a3314a0cbb2ff7",
-    "user": "60f9f7aeb5a3314a0cbb2ff5",
-    "items": [
-      "60f9f9b3b5a3314a0cbb2ff8",
-      "60f9f9b3b5a3314a0cbb2ff9"
-    ],
+[
+  {
+    "_id": 1,
+    "user": 1,
+    "items": [1, 2],
     "createdAt": "2023-09-04T12:00:00.000Z"
+  },
+  {
+    "_id": 2,
+    "user": 2,
+    "items": [3],
+    "createdAt": "2023-09-04T12:30:00.000Z"
   }
-  
+]

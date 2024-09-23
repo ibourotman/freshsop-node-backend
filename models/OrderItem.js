@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const orderItemSchema = new Schema({
-    order: { type: Schema.Types.ObjectId, ref: 'Order', required: true },  // Reference to Order
-    product: { type: Schema.Types.ObjectId, ref: 'Product', required: true },  // Reference to Product
-    quantity: { type: Number, required: true }
+const OrderItemSchema = new Schema({
+    _id: { type: Number, required: true },  // Utilisation d'un entier pour _id
+    order: { type: Number, ref: 'Order', required: true },  // Référence à la commande
+    product: { type: Number, ref: 'Product', required: true },  // Référence au produit
+    quantity: { type: Number, required: true }  // Quantité de produits dans l'ordre
 });
 
-module.exports = mongoose.model('OrderItem', orderItemSchema);
+const OrderItem = mongoose.model('OrderItem', OrderItemSchema);
+module.exports = OrderItem;
